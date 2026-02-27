@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample B — Modern | The Wedding Maestro</title>
+  <link rel="icon" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container row">
+    <a class="brand" href="./index.html">
+      <img src="./assets/img/logo.png">
+      <div class="title">Modern Edition</div>
+    </a>
+    <nav class="menu">
+      <a href="./pages/services.html">Services</a>
+      <a href="./pages/packages.html">Packages</a>
+      <a href="./pages/gallery.html">Gallery</a>
+      <a href="./pages/about.html">About</a>
+      <a class="cta" href="./pages/contact.html">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container" style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center;">
+    <div>
+      <h1 class="h1" style="font-size:56px;">Modern Wedding<br>Entertainment</h1>
+      <p class="lede">Clean aesthetics. Premium sound. Minimal design with maximum impact.</p>
+      <div class="actions">
+        <a class="btn primary" href="./pages/contact.html">Get Quote →</a>
+        <a class="btn" href="./pages/gallery.html">View Gallery →</a>
+      </div>
+    </div>
+    <div class="media-thumb" style="border-radius:20px;overflow:hidden;">
+      <img src="./assets/media/photos/photo_02.jpg">
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    © <span class="js-year"></span> The Wedding Maestro
+  </div>
+</footer>
+<script>document.querySelectorAll('.js-year').forEach(n=>n.textContent=new Date().getFullYear());</script>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>

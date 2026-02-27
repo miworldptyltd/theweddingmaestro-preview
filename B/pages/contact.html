@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample A — Elegant | The Wedding Maestro</title>
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container row">
+    <a class="brand" href="../index.html">
+      <img src="../assets/img/logo.png" alt="The Wedding Maestro logo">
+      <div class="title">DJ MC &amp; Event Coordinator</div>
+    </a>
+    <nav class="menu">
+      <a href="./services.html">Services</a>
+      <a href="./packages.html">Packages</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./about.html">About</a>
+      <a class="cta" href="./contact.html">Get Quote</a>
+    </nav>
+  </div>
+</header>
+
+
+<main class="section"><div class="container">
+<h1 class="h1" style="font-size:42px;">Get a quote</h1>
+<p class="lede">Complete the details below. Clicking <strong>Continue</strong> opens your email pre-filled to <strong>info@miworld.tech</strong>.</p>
+<div class="grid3" style="grid-template-columns: 1.3fr 0.7fr;">
+  <div class="card" style="grid-column: span 2;"><div class="pad">
+    <form id="enquiryForm">
+      <div class="form">
+        <div class="field"><label>Full name *</label><input name="name" required placeholder="Your name"></div>
+        <div class="field"><label>Email *</label><input type="email" name="email" required placeholder="you@example.com"></div>
+        <div class="field"><label>Phone *</label><input name="phone" required placeholder="0400 000 000"></div>
+        <div class="field"><label>Event type *</label>
+          <select name="eventType" required>
+            <option value="">Select…</option><option>Wedding</option><option>Birthday</option><option>New baby</option><option>Baby shower</option><option>Engagement</option><option>Corporate</option><option>Other</option>
+          </select>
+        </div>
+        <div class="field"><label>Event date *</label><input type="date" name="eventDate" required></div>
+        <div class="field"><label>Start time *</label><input type="time" name="startTime" required></div>
+        <div class="field"><label>Duration *</label>
+          <select name="duration" required>
+            <option value="">Select…</option><option>3 hours</option><option>4 hours</option><option>5 hours</option><option>6 hours</option><option>7 hours</option><option>8 hours</option><option>8+ hours (specify in notes)</option>
+          </select>
+        </div>
+        <div class="field"><label>Estimated guests</label>
+          <select name="guests"><option value="">Select…</option><option>Under 20</option><option>20–50</option><option>50–100</option><option>100–200</option><option>200+</option></select>
+        </div>
+        <div class="field"><label>Venue</label><input name="venue" placeholder="Venue name"></div>
+        <div class="field"><label>Suburb / City</label><input name="suburb" placeholder="e.g., Melbourne CBD"></div>
+
+        <div class="field full">
+          <label>Services (tick what you want)</label>
+          <div class="checkrow"><input type="checkbox" name="wantDJ" checked> <div class="small"><strong>DJ</strong> — music programming + mixing</div></div>
+          <div class="checkrow"><input type="checkbox" name="wantMC"> <div class="small"><strong>MC</strong> — hosting + formalities</div></div>
+          <div class="checkrow"><input type="checkbox" name="wantCeremony"> <div class="small"><strong>Ceremony audio</strong> — vows + music cues</div></div>
+          <div class="checkrow"><input type="checkbox" name="wantLighting"> <div class="small"><strong>Lighting</strong> — dancefloor / ambience options</div></div>
+        </div>
+
+        <div class="field full"><label>Notes</label><textarea name="notes" placeholder="Tell us the vibe, key songs, cultural elements, timings…"></textarea></div>
+
+        <div class="field full">
+          <div class="notice"><strong>Availability check (demo):</strong> select a date and click “Check availability”.</div>
+          <div class="actions" style="margin-top:12px;"><button class="btn" id="checkAvailability">Check availability</button></div>
+          <div id="availabilityResult" class="small" style="margin-top:10px;"></div>
+        </div>
+
+        <div class="field full">
+          <div class="checkrow"><input type="checkbox" name="consentMedia" required>
+            <div class="small">I acknowledge and allow The Wedding Maestro to use photos/videos from my event on its website/socials.</div>
+          </div>
+        </div>
+
+        <div class="field full">
+          <div id="formMsg" class="small" style="opacity:.95;"></div>
+          <div class="actions" style="margin-top:10px;">
+            <button class="btn primary" type="submit">Continue →</button>
+            <a class="btn" href="./packages.html">View packages →</a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div></div>
+
+  <aside class="card">
+    <div class="media-thumb"><img src="../assets/media/photos/photo_07.jpg" alt="Event"></div>
+    <div class="pad"><div class="tag">Fast reply</div><h3>What happens next</h3><div class="small">You send the pre-filled email. We confirm availability, clarify details, then respond with your tailored quote.</div></div>
+  </aside>
+</div>
+</div></main>
+
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <div>© <span class="js-year"></span> The Wedding Maestro</div>
+      <div style="opacity:.85;">Sample site (demo). Email: info@miworld.tech</div>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
